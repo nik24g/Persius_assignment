@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Create Post{% endblock title %}
+{% block body %}
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="container my-5">
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Picture of Place</label>
+            <input class="form-control" type="file" id="formFile" name="image" required>
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">Place details</span>
+            <textarea class="form-control" aria-label="With textarea" name="details" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary my-3">Submit</button>
+    </div>
+</form>
+
+{% endblock body %}

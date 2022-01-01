@@ -1,0 +1,13 @@
+.comments-body, .winner-body{
+    /* border: 2px solid red; */
+    background-color: #000d40;
+    width: 300px;
+    height: fit-content;
+    padding: 21px;
+    border-radius: 13px;
+    margin-top: 12px;
+}
+.winner-body input{
+    width: 167px;
+    margin: 15px 0px;
+}

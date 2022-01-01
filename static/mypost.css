@@ -1,0 +1,17 @@
+.view{
+    width: 65px;
+    height: 30px;
+    background-color: rgb(0, 31, 124);
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 2;
+    margin: auto;
+    
+}
+.view a{
+    text-decoration: none;
+    color: inherit;
+}

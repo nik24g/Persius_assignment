@@ -1,0 +1,30 @@
+.container .image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+}
+.container .image{
+    margin: 25px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+}
+.profile-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 410px;
+    height: 450px;
+    background: #ecd6bf;
+    color: black;
+    border-radius: 15px;
+    margin-top: 35px;
+}
+.update{
+    margin: 25px;
+}
+.update a{
+    text-decoration: none;
+}

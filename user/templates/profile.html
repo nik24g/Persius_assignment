@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Profile{% endblock title %}
+{% block body %}
+
+<div class="container profile-container">
+    <div class="image">
+        <img src="{{image}}" alt="dp">
+    </div>
+    <div class="details">
+        <span class="name">{{first_name}} {{last_name}}</span>
+        <span class="username">Username: {{username}}</span>
+        <span class="age">Age: {{age}}</span>
+        <span class="email">Email: {{email}}</span>
+        <span class="address">Address: {{address}}</span>
+    </div>
+    <div class="update">
+        <a href="{% url 'user:update' user_id=request.user.id%}">Update Profile</a>
+    </div>
+</div>
+
+{% endblock body %}

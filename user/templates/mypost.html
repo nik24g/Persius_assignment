@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}My Post{% endblock title %}
+{% block body %}
+<div class="postbody">
+    {% for post in posts %}
+    <div class="postbox">
+        <div class="image">
+            <img src="{{post.image.url}}" alt="">
+        </div>
+        <div class="discription">
+            Discription: {{post.dsc}}
+        </div>
+        {% if post.winner != None %}
+        <div class="winner">
+            Winner Name: {{post.winner}}
+        </div>
+        {% endif %}
+        <div class="view">
+            <a href="{% url 'user:post' post_id=post.id%}">View</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock body %}

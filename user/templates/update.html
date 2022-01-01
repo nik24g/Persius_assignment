@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Profile{% endblock title %}
+{% block body %}
+
+<div class="container profile-container">
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="image">
+            <img src="{{image}}" alt="dp">
+            <input type="file" name="image">
+        </div>
+        <div class="details">
+            <input type="text" name="firstname" value={{first_name}}>
+            <input type="text" name="lastname" value={{last_name}}>
+            <input type="text" name="username" value={{username}}>
+            <input type="number" name="age" value={{age}}>
+            <input type="email" name="email" value={{email}}>
+            <input type="text" name="address" value={{address}}>
+        </div>
+        <div class="submit">
+            <button type='submit'>Submit</button>
+        </div>
+    </form>
+</div>
+
+{% endblock body %}

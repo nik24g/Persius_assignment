@@ -1,0 +1,22 @@
+html{
+    min-height: -webkit-fill-available;
+}
+body {
+    background: linear-gradient(50deg, #0166a1, #450156, #0166a1) center center/cover;
+    color: rgb(211, 187, 196);
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+.button {
+    padding: 4px 0px;
+}
+
+.blog-footer {
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+}
+
+.blog-footer p:last-child {
+    margin-bottom: 0;
+}
