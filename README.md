@@ -10,7 +10,7 @@ Run `python manage.py runserver` for a dev server. Navigate to `http://localhost
 
 ## Virtual environment
 
-Run `pip3 install --requirements.txt` to create virtual environment and install modules and packages for this project
+Run `pip3 install --requirements.txt` to install modules and packages for this project
 
 
 ## Further help
